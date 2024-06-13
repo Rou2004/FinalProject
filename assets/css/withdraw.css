@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+nav {
+    height: 80px;
+    background-color: #BCB8B1;
+    padding: 25px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.product,
+.addressee_info,
+.total {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 30px 15%;
+    width: 70%;
+    padding: 30px;
+    line-height: 30px;
+    background-color: #F4F3EE;
+}
+
+.order_info {
+    margin: 10px 0px 0px 40px;
+    font-size: 25px;
+    line-height: 45px;
+}
+
+p {
+    font-size: 20px;
+    position: relative;
+    margin-left: 260px;
+    margin-top: 10px;
+}
+
+.product_img {
+    height: 150px;
+    margin: 0px 20px;
+}
+
+.addressee_info,
+.total {
+    display: block;
+    line-height: 60px;
+    background-color: white;
+}
+
+label {
+    margin: 0px 10px;
+}
+
+.input_box1 {
+    height: 28px;
+    width: 150px;
+}
+
+.input_box2 {
+    height: 28px;
+    width: 360px;
+}
+
+.input_box3 {
+    height: 28px;
+    width: 100px;
+}
+
+.familyMart {
+    position: absolute;
+    right: 20px;
+}
+
+.seven {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+}
+
+.check_out,
+.cancel {
+    margin: 20px;
+    padding: 16px 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #BCB8B1;
+    color: #463F3A;
+    text-decoration: none;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    right: 15%;
+    border: 0px;
+}
+
+.check_out {
+    background-color: #E0AFA0;
+}
+
+footer {
+    background-color: #dabfb7;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
+
+.check_out:hover {
+    color: #ffffff;
+}
+
+.cancel:hover {
+    color: #ffffff;
+}

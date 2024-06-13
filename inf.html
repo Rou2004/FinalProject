@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="assets/CSS/inf.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <a class="fixed-arrow" href="#top">
+        <img class="arrow" src="assets/image/arrow-up.png">
+    </a>
+    
+    <div class="sticky-top">
+        <header class="navbar">
+            <div class="left">
+                <span class="navbar-brand"><img src="assets/image/logo.jpg" alt="" class="logo"></span>
+                <ul class="drop-down-menu">
+                    <li><a href="product.html">PRODUCT</a>
+                        <ul>
+                            <li><a href="index.html">HOME</a>
+                            </li>
+                            <li><a href="product.html#sofa">SOFA</a>
+                            </li>
+                            <li><a href="product.html#table">TABLE</a>
+                            </li>
+                            <li><a href="product.html#cabinet">CABINET</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="member.html">MEMBER</a>
+                        <ul>
+                            <li><a href="login.html">登入</a>
+                            </li>
+                            <li><a href="sign-up.html">註冊</a>
+                            </li>
+                            <li><a href="member.html">個人資料</a>
+                                <ul>
+                                    <li><a href="member.html">會員資料</a>
+                                    </li>
+                                    <li><a href="edit.html">修改會員資料</a>
+                                    </li>
+                                </ul>
+            
+                            </li>
+                            <li><a href="#">購買清單</a>
+                                <ul>
+                                    <li><a href="cart.html">購物車</a>
+                                    </li>
+                                    <li><a href="order.html">訂單查詢</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li><a href="us.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="Search" placeholder="🔍 搜尋" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">GO!</button>
+            </form>
+        </header>
+        <nav>
+            <div class="home">
+                <a href="index.html">
+                    <img class="home-img" src="assets/image/home.png">
+                </a>
+            </div>
+            <div class="member">
+                <a href="member.html">
+                    <img class="member-img" src="assets/image/member.png">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <img class="cart-img" src="assets/image/cart.png">
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+     <!-- 圖片、名稱 -->
+        <div class="card1">
+            <!-- card1 分左右兩個區塊 -->
+            <div class="card1-left">
+                <!-- 商品照片輪播圖 -->
+                <img class="card1-img" src="assets/image/inf-img/img2.webp">
+            
+                <!-- Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+            
+            </div>
+            <div class="card1-right">
+                <!-- column 排列 -->
+                <h2><b>實木小餐桌</b></h2>
+                <div class="star">
+                    <img src="assets/image/star.png">
+                    <img src="assets/image/star.png">
+                    <img src="assets/image/star.png">
+                    <img src="assets/image/star.png">
+                    <img src="assets/image/star1.png">
+                </div>
+
+                <div class="sale">
+                    已售出數量：1203
+                </div>
+                <div id="checkbox">
+                    <label>
+                        <input type="radio" name="options" value="option1">
+                        <div class="button round"><b>white</b></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options" value="option2">
+                        <div class="button round"><b>black</b></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options" value="option3">
+                        <div class="button round"><b>gray</b></div>
+                    </label>
+                </div>
+
+                <div class="number">
+                    購買數量：&nbsp;
+                    <form id='myform' method='POST' action='#'>
+                        <label for=""></label><input type='button' value='-' class='qtyminus' field='quantity' /><!--
+                        --><input type='text' name='quantity' value='0' class='qty' /><!--
+                    --><input type='button' value='+' class='qtyplus' field='quantity' />
+                    </form>
+                </div>
+
+                <div class="add">
+                    <a href="cart.html"><button class="addtocart">加入購物車</button></a>
+                    <a href="check_out.html"><button class="buy">下單購買</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 詳細資訊 -->
+        <div class="card2">
+            <h3><b>詳細商品資訊</b></h3><hr>
+            <h4><b>實木小餐桌</b></h4>
+            <p>這款實木小木桌，精緻工藝與天然木紋相融合，完美提升您的家居質感。<br>
+                穩固耐用，兼具實用與美觀，是家居的不二之選！</p>
+            <h4><b>商品規格
+            </b></h4>
+            <p>
+                &nbsp; &bull;&nbsp;材質：天然實木<br>
+                &nbsp; &bull;&nbsp;尺寸：200公分（長）、150公分（寬）、50公分（高）<br>
+                &nbsp; &bull;&nbsp;重量：8公斤<br>
+                &nbsp; &bull;&nbsp;承重：50公斤<br>
+                &nbsp; &bull;&nbsp;適用：客廳、書房、臥室
+            </p>
+            <h4><b>商品內容物</b></h4>
+            <p>
+                &nbsp; 1. 桌面 x1 <br>
+                &nbsp; 2. 桌腳 x4 <br>
+                &nbsp; 3. 組裝配件一套 <br>
+                &nbsp; 4. 使用說明書 x1 <br>
+            </p>
+        </div>
+
+        <!-- 更多發現 -->
+        <div class="card3">
+            <h3><b>更多相關家居</b></h3><hr>
+            <form class="pro">
+                <div class="else">
+                    <a href="product.html">
+                        <img src="assets/image/table/table1.jpeg">
+                    </a>
+                    <h5><b>簡約小桌子</b></h5>
+                </div>
+                <div class="else">
+                    <a href="product.html">
+                        <img src="assets/image/table/table2.jpeg">
+                    </a>
+                    <h5><b>現代簡約餐桌</b></h5>
+                </div>
+                <div class="else">
+                    <a href="product.html">
+                        <img src="assets/image/table/table3.jpeg">
+                    </a>
+                    <h5><b>質感紋理桌</b></h5>
+                </div>
+                <div class="else">
+                    <a href="product.html">
+                        <img src="assets/image/table/table4.jpeg">
+                    </a>
+                    <h5><b>簡約石紋茶几</b></h5>
+                </div>
+                <div class="else">
+                    <a href="product.html">
+                        <img src="assets/image/cabinet/cabinet5.jpeg">
+                    </a>
+                    <h5><b>實木收納櫃</b></h5>
+                </div>
+                <div class="else">
+                    <a href="product.html">
+                        <img src="assets/image/cabinet/cabinet7.jpeg">
+                    </a>
+                    <h5><b>多層角落櫃</b></h5>
+                </div>
+                <div class="else">
+                    <a href="product.html">
+                        <img src="assets/image/cabinet/cabinet8.jpeg">
+                    </a>
+                    <h5><b>木質玄關櫃</b></h5>
+                </div>
+                <div class="else">
+                    <a href="product.html">
+                        <img src="assets/image/cabinet/cabinet6.jpeg">
+                    </a>
+                    <h5><b>多層木紋收納櫃</b></h5>
+                </div>
+            </form>
+        </div>
+
+        <!-- 商品評價 -->
+        <div class="card4">
+            <h3><b>商品評價</b></h3><hr>
+            <div class="comment-section">
+                <div class="comment-form">
+                    <div class="star_comment">
+                        <img src="assets/image/user.png" alt="" class="user"> u*****3
+                        <img src="assets/image/star.png">
+                        <img src="assets/image/star.png">
+                        <img src="assets/image/star.png">
+                        <img src="assets/image/star.png">
+                        <img src="assets/image/star.png">
+                    </div>
+                    <p>真是太棒了！超級喜歡！！</p><hr>
+                </div>
+                <div class="comment-form">
+                    <div class="star_comment">
+                        <img src="assets/image/user.png" alt="" class="user"> i*****1
+                        <img src="assets/image/star.png">
+                        <img src="assets/image/star.png">
+                        <img src="assets/image/star.png">
+                        <img src="assets/image/star.png">
+                        <img src="assets/image/star.png">
+                    </div>
+                    <p>物流很快，服務品質讚！</p><hr>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the elements
+            var qtyMinus = document.querySelector('.qtyminus');
+            var qtyPlus = document.querySelector('.qtyplus');
+            var qtyField = document.querySelector('.qty');
+    
+            // Function to handle decrement
+            qtyMinus.addEventListener('click', function(e) {
+                e.preventDefault();
+                var currentQty = parseInt(qtyField.value);
+                if (!isNaN(currentQty) && currentQty > 0) {
+                    qtyField.value = currentQty - 1;
+                }
+            });
+    
+            // Function to handle increment
+            qtyPlus.addEventListener('click', function(e) {
+                e.preventDefault();
+                var currentQty = parseInt(qtyField.value);
+                if (!isNaN(currentQty)) {
+                    qtyField.value = currentQty + 1;
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <footer>
+        copyright @ 陳珊妮 陳柔恩 高嘉駿
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/check_out.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="cart.html"><img src="assets/image/left.png" class="left"></a>
+        <span>結帳</span>
+    </nav>
+    <p>訂單詳情：</p>
+    <div class="product">
+        <img src="https://picsum.photos/300/200?random=1" class="product_img">
+        <div class="order_info">
+            商品名稱：<br>
+            選項：<br>
+            <pre>數量：1                        價格：300</pre>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://picsum.photos/300/200?random=1" class="product_img">
+        <div class="order_info">
+            商品名稱：<br>
+            選項：<br>
+            <pre>數量：1                        價格：300</pre>
+        </div>
+    </div>
+    <form action="" method="post">
+        <div class="addressee_info">
+            收件人：<input type="text" class="input_box1" required><br>
+            電話：<input type="tel" class="input_box1" required maxlength="10"><br>
+            電子信箱：<input type="email" class="input_box2" required><br>
+            收件方式：<label><input type="radio" name="radios" class="track-order-change" id="method1">超商取貨  $60</label>
+                    <label><input type="radio" name="radios" class="track-order-change" id="method2">宅配到府  $100</label>
+                    <div class="col-xs-12 panel-collapse collapse in" id="multiCollapse1">
+                        <div class="card card-body">
+                            <label><input type="radio" name="convenient_store" class="track-order-change" id="familyMart">全家
+                                <div class="col-xs-12 panel-collapse collapse in" id="choice_familyMart">
+                                    門市名稱與地址：<input type="text" class="input_box2" placeholder="XX門市,縣市/區/鄉鎮/路/巷弄/樓/號">
+                                </div>
+                            </label>   
+                        
+                            <label><input type="radio" name="convenient_store" class="track-order-change" id="seven">7-11
+                                <div class="col-xs-12 panel-collapse collapse in" id="choice_seven">
+                                    門市名稱與地址：<input type="text" class="input_box2" placeholder="XX門市, 縣市/區/鄉鎮/路/巷弄/樓/號">
+                                </div>
+                            </label>
+                            <a href="https://www.family.com.tw/Marketing/Map" target="_blank" rel="noopener noreferrer" class="familyMart">全家門市查詢系統</a>
+                            <a href="https://emap.pcsc.com.tw/" target="_blank" rel="noopener noreferrer" class="seven">7-11門市查詢系統</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 panel-collapse collapse in" id="multiCollapse2">
+                        <div class="card card-body">
+                            地址：<input type="text" class="input_box2" placeholder="縣市/區/鄉鎮/路/巷弄/樓/號">
+                        </div>
+                    </div><br>
+            付款方式：<label><input type="radio" name="payment" class="track-order-change" id="credit_card">信用卡/金融卡</label>
+                    <div class="col-xs-12 panel-collapse collapse in" id="multiCollapse3">
+                        <div class="card card-body">
+                            <div>
+                                信用卡號碼：<br>
+                                <input type="text" class="input_box3" pattern="[0-9]]{4}" maxlength="4" placeholder="">-<input type="text" class="input_box3" pattern="[0-9]]{4}" maxlength="4" placeholder="">-
+                                <input type="text" class="input_box3" pattern="[0-9]]{4}" maxlength="4" placeholder="">-<input type="text" class="input_box3" pattern="[0-9]]{4}" maxlength="4" placeholder="">
+                                <input type="month" class="input_box1" placeholder="MM/YY"><input type="text" class="input_box3" placeholder="安全碼" pattern="[0-9]]{3}" maxlength="3">
+                            </div>
+
+                        </div>
+                    </div>
+                    <label><input type="radio" name="payment">貨到付款</label><br>
+        </div><hr>
+        <div class="total">
+            商品總金額：NT $600 <br>
+            運費：NT $60 <br>
+            應付總金額：NT $660 <br>
+        </div>
+        <button class="check_out" type="submit">結帳</button>
+    </form>
+    <script src="assets/js/check_out.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

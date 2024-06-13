@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+a:link{
+    color:#000;
+}
+a:hover{
+    color:#ffffff;
+}
+header {
+    position: fixed;
+    top: 0%;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #BCB8B1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
+    flex-direction: row;
+    z-index: 10000;
+    background-color: white;
+}
+
+.logo{
+    height: 50px;
+}
+
+.navbar{
+    background-color: #BCB8B1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-brand{
+    color: rgb(69, 66, 63);
+    margin-left: 40px;
+    font-size: 24px;
+    margin: 25px;
+}
+.fixed-arrow{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-size: cover;
+
+}
+.arrow{
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    border-radius: 200px;
+    width: 80px;
+    height: 80px;
+
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.prod{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    background-color: rgb(135, 128, 128);
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+   
+}
+.prod:hover{
+    color: black;
+    background-color: #e7b7a9;
+}
+footer{
+    background-color: #dabfb7;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+ul { /* 取消ul預設的內縮及樣式 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.drop-down-menu {
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    margin: 5px;
+    padding: 5px;
+    align-content: center;
+}
+
+ul.drop-down-menu li {
+    position: relative;
+    white-space: nowrap;
+    border-right: #ccc 1px solid;
+}
+
+ul.drop-down-menu > li:last-child {
+    border-right: none;
+}
+
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
+
+ ul.drop-down-menu a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+    background-color: #7a7576;
+    color: #fff;
+}
+ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: #7a7576;
+    color: #fff;
+}
+ul.drop-down-menu ul {
+    border: #ccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 160px;
+}
+
+ul.drop-down-menu ul li {
+    border-bottom: #ccc 1px solid;
+}
+
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
+
+ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+    z-index: 999;
+    top: 10px;
+    left: 90%;
+}
+ul.drop-down-menu ul { /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+
+.home, .member, .cart {
+    margin: 10px auto;
+    width: 30%;
+    text-align: center;
+}
+
+.home:hover, .member:hover, .cart:hover {
+    background-color: #dabfb7;
+    border-radius: 20px;
+}
+
+.home-img, .member-img, .cart-img {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+.flip-container {
+    perspective: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* .flipper .front,
+.flipper .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+} */
+.flipper .front {
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+
+.flipper .back {
+    transform: rotateY(180deg);
+}
+
+.flipper.flipped {
+    transform: rotateY(180deg);
+}
+.flipper:hover {
+    transform: rotateY(180deg);
+}
+.flipper {
+    position: relative;
+    width: 360px;
+    height: 560px;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+    margin: 18px 26px 14px 26px;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.front {
+    /* background-color: #848282; */
+    color: #7a7576;
+    border-radius: 10px;
+    border-color: #7a7576;
+    border-style: double;
+}
+.back-img{
+    width: 280px;
+    height: 280px;
+    margin-top: 26px;
+    border-radius: 10px;
+}
+.back {
+    background-color: #c7c2c1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.back-word{
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+    color: #555252;
+    line-height: 2;
+    font-weight: bold;
+}
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* 確保沒有額外的內邊距 */
+    list-style-type: none; /* 移除列表樣式 */
+}
+
+.social-icon li {
+    margin: 0 10px; /* 為每個列表項設置左右間距 */
+}
+.social-icon a {
+    display: inline-block;
+}
+.social-img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.social-img:hover {
+    transform: scale(1.3);
+}
+.back-title{
+    margin-top: 10px;
+    font-size: 28px;
+}

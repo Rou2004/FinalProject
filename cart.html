@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="sticky-top">
+        <header class="navbar">
+            <div class="left">
+                <span class="navbar-brand"><img src="assets/image/logo.jpg" alt="" class="logo"></span>
+                <ul class="drop-down-menu">
+                    <li><a href="product_login.html">PRODUCT</a>
+                        <ul>
+                            <li><a href="index_login.html">HOME</a>
+                            </li>
+                            <li><a href="product.html#sofa">SOFA</a>
+                            </li>
+                            <li><a href="product.html#table">TABLE</a>
+                            </li>
+                            <li><a href="product.html#cabinet">CABINET</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="member.html">MEMBER</a>
+                        <ul>
+                            <li><a href="login.html">登出</a>
+                            </li>
+                            <li><a href="member.html">個人資料</a>
+                                <ul>
+                                    <li><a href="member.html">會員資料</a>
+                                    </li>
+                                    <li><a href="edit.html">修改會員資料</a>
+                                    </li>
+                                </ul>
+            
+                            </li>
+                            <li><a href="#">購買清單</a>
+                                <ul>
+                                    <li><a href="cart.html">購物車</a>
+                                    </li>
+                                    <li><a href="order.html">訂單查詢</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li><a href="us.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="Search" placeholder="🔍 搜尋" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">GO!</button>
+            </form>
+        </header>
+        <nav>
+            <div class="home">
+                <a href="index.html">
+                    <img class="home-img" src="assets/image/home.png">
+                </a>
+            </div>
+            <div class="member">
+                <a href="member.html">
+                    <img class="member-img" src="assets/image/member.png">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <img class="cart-img" src="assets/image/cart.png">
+                </a>
+            </div>
+        </nav>
+    </div>
+    
+    <form action="" method="post">
+        <label class="product">
+            <input type="checkbox" class="select_product">
+            <img src="https://picsum.photos/300/200?random=1" alt="" class="img_product">
+            <div class="product_info">
+                商品名稱：雙人小沙發<br>
+                <select name="" id="">
+                    <option value="米白色">米白色</option>
+                    <option value="灰色">灰色</option>
+                </select><br>
+                數量：
+                <input type="button" value="-" onclick="minus(0)" class="minus">
+                <input type="text" value="1" class="output_num">
+                <input type="button" value="+" onclick="add(0)" class="add">
+                <p class="stock">剩餘數量：999</p>
+                <p>價格：300</p>
+            </div>
+        </label>
+        <label class="product">
+            <input type="checkbox" class="select_product">
+            <img src="https://picsum.photos/300/200?random=2" alt="" class="img_product">
+            <div>
+                商品名稱：折疊休閒沙發<br>
+                <select name="" id="">
+                    <option value="深灰">深灰</option>
+                    <option value="黑色">黑色</option>
+                </select><br>
+
+                數量：
+                <input type="button" value="-" onclick="minus(0)" class="minus">
+                <input type="text" value="1" class="output_num">
+                <input type="button" value="+" onclick="add(0)" class="add">
+                <p class="stock">剩餘數量：999</p>
+                <p>價格：300</p>
+            </div>
+        </label>
+        <p class="total">總金額：NT$300元</p>
+        <a href="check_out.html"><button class="checkout" type="submit">結帳</button></a>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <footer>
+        copyright @ 2024 陳珊妮 陳柔恩 高嘉駿
+    </footer>
+    <script>
+        function minus(n){
+            var num = Number(document.getElementsByClassName("output_num")[n].value);
+            if(num>=1){
+                document.getElementsByClassName("output_num")[n].value = num-1;
+            }
+            else
+                alert("商品不能為負數")
+            
+        }
+
+        function add(n){
+            var num = Number(document.getElementsByClassName("output_num")[n].value);
+            if(num<=999){
+                document.getElementsByClassName("output_num")[n].value = num+1;
+            }
+            else
+                alert("商品不足")
+        }
+    </script>
+</body>
+</html>

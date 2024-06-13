@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改會員資料</title>
+    <link rel="stylesheet" href="assets/css/member.css">
+</head>
+<body>
+    <div class="sticky-top">
+        <header class="navbar">
+            <div class="left">
+                <span class="navbar-brand"><img src="assets/image/logo.jpg" alt="" class="logo"></span>
+                <ul class="drop-down-menu">
+                    <li><a href="product_login.html">PRODUCT</a>
+                        <ul>
+                            <li><a href="index_login.html">HOME</a>
+                            </li>
+                            <li><a href="product.html#sofa">SOFA</a>
+                            </li>
+                            <li><a href="product.html#table">TABLE</a>
+                            </li>
+                            <li><a href="product.html#cabinet">CABINET</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="member.html">MEMBER</a>
+                        <ul>
+                            <li><a href="login.html">登出</a>
+                            </li>
+                            <li><a href="member.html">個人資料</a>
+                                <ul>
+                                    <li><a href="member.html">會員資料</a>
+                                    </li>
+                                    <li><a href="edit.html">修改會員資料</a>
+                                    </li>
+                                </ul>
+            
+                            </li>
+                            <li><a href="#">購買清單</a>
+                                <ul>
+                                    <li><a href="cart.html">購物車</a>
+                                    </li>
+                                    <li><a href="order.html">訂單查詢</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li><a href="us.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <div class="home">
+                <a href="index.html">
+                    <img class="home-img" src="assets/image/home.png">
+                </a>
+            </div>
+            <div class="member">
+                <a href="member.html">
+                    <img class="member-img" src="assets/image/member.png">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <img class="cart-img" src="assets/image/cart.png">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="container0">
+        <div class="container">
+            <form id="edit-profile-form" action="" method="post">
+                <h2>修改會員資料</h2><br>
+                <label for="account">帳號 :</label>
+                <input type="text" id="account" name="account" disabled value="asd789">
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required value="asd789456123@gmail.com">
+                
+                <label for="name">姓名 :</label>
+                <input type="text" id="name" name="name" required value="郝類喔">
+                
+                <label for="address">地址 :</label>
+                <input type="text" id="address" name="address" value="台北市信義區台灣大道一段40號">
+                
+                <label for="phone">電話 :</label>
+                <input type="tel" id="phone" name="phone" required value="0987654321">
+                
+                <button type="submit">保存變更</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <footer>
+        copyright @ 2024 陳珊妮 陳柔恩 高嘉駿
+    </footer>
+</body>
+</html>

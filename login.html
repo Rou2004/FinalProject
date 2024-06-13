@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="sticky-top">
+        <header class="navbar">
+            <div class="left">
+                <span class="navbar-brand"><img src="assets/image/logo.jpg" alt="" class="logo"></span>
+                <ul class="drop-down-menu">
+                    <li><a href="product.html">PRODUCT</a>
+                        <ul>
+                            <li><a href="index.html">HOME</a>
+                            </li>
+                            <li><a href="product.html#sofa">SOFA</a>
+                            </li>
+                            <li><a href="product.html#table">TABLE</a>
+                            </li>
+                            <li><a href="product.html#cabinet">CABINET</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="member.html">MEMBER</a>
+                        <ul>
+                            <li><a href="login.html">登入</a>
+                            </li>
+                            <li><a href="sign-up.html">註冊</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="us.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <form class="d-flex">
+                <input class="form-control me-2" type="Search" placeholder="🔍 搜尋" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">GO!</button>
+            </form> -->
+        </header>
+        <nav>
+            <div class="home">
+                <a href="index.html">
+                    <img class="home-img" src="assets/image/home.png">
+                </a>
+            </div>
+            <div class="member">
+                <a href="member.html">
+                    <img class="member-img" src="assets/image/member.png">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <img class="cart-img" src="assets/image/cart.png">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="container0">
+        <div class="container">
+            <form action="your-login-endpoint" method="post">
+                <h2>Welcome!</h2>
+                <label for="account">Account</label><br>
+                <input type="text" id="account" name="account" placeholder="Account" required><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+                <button type="submit">Sign in</button><br>
+                <a class="tt1" href="password.html">Forgot Password?</a><br>
+                <h2>Not a member?</h2><br>
+                <a href="signup.html" class="button">Sign up</a>
+    
+            </form>
+        </div>
+    </div>
+    <footer>
+        copyright @ 陳珊妮 陳柔恩 高嘉駿
+    </footer>
+</body>
+</html>

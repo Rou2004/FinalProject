@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <a class="fixed-arrow" href="#top">
+        <img class="arrow" src="assets/image/arrow-up.png">
+    </a>
+    <div class="sticky-top">
+        <header class="navbar">
+            <div class="left">
+                <span class="navbar-brand"><img src="assets/image/logo.jpg" alt="" class="logo"></span>
+                <ul class="drop-down-menu">
+                    <li><a href="product.html">PRODUCT</a>
+                        <ul>
+                            <li><a href="index.html">HOME</a>
+                            </li>
+                            <li><a href="product.html#sofa">SOFA</a>
+                            </li>
+                            <li><a href="product.html#table">TABLE</a>
+                            </li>
+                            <li><a href="product.html#cabinet">CABINET</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="member.html">MEMBER</a>
+                        <ul>
+                            <li><a href="login.html">登入</a>
+                            </li>
+                            <li><a href="sign-up.html">註冊</a>
+                            </li> 
+                        </ul>
+                    </li>
+                    
+                    <li><a href="us.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="Search" placeholder="🔍 搜尋" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">GO!</button>
+            </form>
+        </header>
+        <nav>
+            <div class="home">
+                <a href="index.html">
+                    <img class="home-img" src="assets/image/home.png">
+                </a>
+            </div>
+            <div class="member">
+                <a href="member.html">
+                    <img class="member-img" src="assets/image/member.png">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <img class="cart-img" src="assets/image/cart.png">
+                </a>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- 輪播圖 -->
+    <div class="part">
+        <div class="part1">
+            
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <a href="inf.html"><img src="assets/image/carou1.jpeg" class="d-block w-100"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="inf.html"><img src="assets/image/carou2.jpeg" class="d-block w-100"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="inf.html"><img src="assets/image/carou3.jpeg" class="d-block w-100"></a>
+                  </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        
+            <!-- Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        </div>
+
+        <!-- 熱銷商品 -->
+        <div class="bestseller">
+            <center><h3>BESTSELLER!</h3></center>
+            <div class="stuff">
+                <div class="stuff-item">
+                    <a href="product.html">
+                        <img class="stuff-img" src="assets/image/coachbed.jpeg">
+                        <br></br>
+                        <h5>懶人沙發床</h5>
+                        <h6>$13,000up</h6>
+                    </a>
+                </div>
+                <div class="stuff-item">
+                    <a href="product.html">
+                        <img class="stuff-img" src="assets/image/officedesk.jpeg">
+                        <br></br>
+                        <h5>多功能書桌</h5>
+                        <h6>$2,000up</h6>
+                    </a>
+                </div>
+                <div class="stuff-item">
+                    <a href="product.html">
+                        <img class="stuff-img" src="assets/image/fragrance.jpeg">
+                        <br></br>
+                        <h5>質感香氛系列</h5>
+                        <h6>$1,000up</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 地圖 -->
+        <div class="map">
+            <center><h3>WHERE?</h3></center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.266912084782!2d121.24097637481628!3d24.95703194138746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221439820707%3A0xba7fd116db19f050!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5Lit5YyX6LevMjAw6Jmf6LOH566h5qiT!5e0!3m2!1szh-TW!2stw!4v1716207499140!5m2!1szh-TW!2stw" width="800" height="450" style="border:20px; margin: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <footer>
+        copyright @ 2024 陳珊妮 陳柔恩 高嘉駿
+    </footer>
+</body>
+</html>
