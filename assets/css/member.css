@@ -254,7 +254,7 @@ ul.drop-down-menu ul ul {
     /*第三層以後的選單出現位置與第二層不同*/
     z-index: 999;
     top: 10px;
-    left: 90%;
+    left: 157px;
 }
 
 ul.drop-down-menu ul {

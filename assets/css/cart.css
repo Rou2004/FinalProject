@@ -104,7 +104,7 @@ ul {
 ul.drop-down-menu {
     display: inline-block;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 13px;
+    font-size: 10px;
     margin: 5px;
     padding: 5px;
     align-content: center;
@@ -148,12 +148,12 @@ ul.drop-down-menu li:hover>a {
 }
 
 ul.drop-down-menu ul {
-    border: #ccc 1px solid;
+    border: #ccc 0px solid;
     position: absolute;
     z-index: 99;
-    left: -1px;
+    left: -32px;
     top: 100%;
-    min-width: 160px;
+    min-width: 180px;
 }
 
 ul.drop-down-menu ul li {
@@ -168,7 +168,7 @@ ul.drop-down-menu ul ul {
     /*第三層以後的選單出現位置與第二層不同*/
     z-index: 999;
     top: 10px;
-    left: 90%;
+    left: 117px;
 }
 
 ul.drop-down-menu ul {
@@ -222,9 +222,10 @@ a {
     margin: 50px 15%;
     width: 70%;
     font-size: 18px;
-    background-color: #F4F3EE;
+    background-color: #d0ccc8;
     padding: 20px;
     line-height: 30px;
+    border-radius: 6px;
 }
 
 .select_product {
@@ -274,6 +275,7 @@ input {
     border-radius: 10px;
     background-color: #E0AFA0;
     border: 0px;
+    color: white;
 }
 
 .total {

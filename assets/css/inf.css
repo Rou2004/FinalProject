@@ -157,12 +157,12 @@ ul.drop-down-menu li:hover>a {
 }
 
 ul.drop-down-menu ul {
-    border: #ccc 1px solid;
+    border: #ccc 0px solid;
     position: absolute;
     z-index: 99;
-    left: -1px;
+    left: -32px;
     top: 100%;
-    min-width: 160px;
+    min-width: 180px;
 }
 
 ul.drop-down-menu ul li {
@@ -177,7 +177,7 @@ ul.drop-down-menu ul ul {
     /*第三層以後的選單出現位置與第二層不同*/
     z-index: 999;
     top: 10px;
-    left: 90%;
+    left: 116px;
 }
 
 ul.drop-down-menu ul {
@@ -539,23 +539,22 @@ h4 {
     /* 按下時改變背景色 */
 }
 
-.logo{
+.logo {
     height: 50px;
 }
 
 .user {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 .star_comment {
     height: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.star img {
+.star_comment img {
     width: 36px;
     height: 36px;
     margin-left: 6px;

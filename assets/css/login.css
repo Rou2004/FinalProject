@@ -7,11 +7,9 @@ html, body {
 }
 
 body {
-    display: flex;
     flex: 1;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
 }
 
 * {
@@ -29,28 +27,23 @@ h2{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .container0{
-    position: fixed;
-    width: 800px;
+    width: 100%;
     display: flex;
-    padding-top: 8% ;
-    /* padding-top: 95px; */
-    padding-left: 22%;
-    /* padding-right: 200px; */
+    padding: 20% ;
     justify-content: center;
     align-items: center;
     border: 20px;
+    flex: 1;
 }
 .container {
     max-width: 400px;
     width: 100%;
-    /* padding: 20px; */
     box-sizing: border-box;
     background-color: #BCB8B1;
     border-radius: 20px;
-    /* margin: 50px;
-    border: 50px; */
+
 }
-.button {
+.btn1 {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -65,9 +58,11 @@ h2{
     box-shadow: 0 4px #999;
 }
 
-.button:hover {background-color: #636262}
+.btn1:hover {
+    background-color: #636262
+}
 
-.button:active {
+.btn1:active {
     background-color: #636262;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -76,19 +71,11 @@ form {
     background: rgba(255, 255, 255, 0.3);
     padding: 3em;
     border-radius: 20px;
-    /* border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.3); */
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
-/* form p {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    color: #fff;
-} */
 
 form label {
     display: block;
@@ -154,47 +141,65 @@ header {
     top: 0;
     font-size: 30px;
     padding: 10px;
-    text-align: center;
     background-color: #BCB8B1;
     width: 100%;
-    box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
-    z-index: 1000; /* 提高層級 */
-}
-nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    top: 96px;
-    height: 60px;
-    position: fixed;
-    box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
-    flex-direction: row;
-    z-index: 1000; /* 提高層級 */
-    background-color: white;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px;
-    background-color: #BCB8B1;
-    position: fixed;
-    top: 0;
     box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
     z-index: 1000;
 }
 
+.logo{
+    height: 50px;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
+    flex-direction: row;
+    z-index: 999; /* 确保nav在header下方 */
+    background-color: white;
+    margin-top: 97px; /* 避免被header遮挡 */
+}
+
+.navbar{
+    background-color: #BCB8B1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .navbar-brand{
     color: rgb(69, 66, 63);
-    /* margin-left: 40px; */
+    margin-left: 40px;
     font-size: 24px;
     margin: 25px;
+}
+.fixed-arrow{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-size: cover;
+
+}
+.arrow{
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    border-radius: 200px;
+    width: 80px;
+    height: 80px;
+
 }
 .left {
     display: flex;
     align-items: center;
+    margin-right: auto; /* 将左侧的内容推到最左边 */
 }
 .prod{
     font-size: 18px;
@@ -210,16 +215,15 @@ nav {
     color: black;
     background-color: #e7b7a9;
 }
-footer{
+
+footer {
     background-color: #dabfb7;
     color: #ffffff;
     text-align: center;
-    align-content: center;
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
+    padding: 15px;
     width: 100%;
     height: 50px;
+    margin-top: auto;
 }
 
 ul { /* 取消ul預設的內縮及樣式 */
@@ -227,12 +231,9 @@ ul { /* 取消ul預設的內縮及樣式 */
     padding: 0;
     list-style: none;
 }
-li{
-    z-index: 10000;
-    background-color: white;
-}
+
 ul.drop-down-menu {
-    border: #ccc 1px solid;
+    
     display: inline-block;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 13px;
@@ -245,7 +246,7 @@ ul.drop-down-menu li {
     position: relative;
     white-space: nowrap;
     border-right: #ccc 1px solid;
-    z-index: 10000;
+    text-align: center;
 }
 
 ul.drop-down-menu > li:last-child {
@@ -256,7 +257,7 @@ ul.drop-down-menu > li {
     float: left; /* 只有第一層是靠左對齊*/
 }
 
-ul.drop-down-menu a {
+ ul.drop-down-menu a {
     background-color: #fff;
     color: #333;
     display: block;

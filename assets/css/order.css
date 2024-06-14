@@ -239,8 +239,10 @@ span {
 .product {
     width: 70%;
     height: 435px;
-    margin: 30px 15%;
+    margin: 50px 15%;
     background-color: #F4F3EE;
+    padding: 20px;
+    border-radius: 6px;
 }
 
 img {
@@ -288,12 +290,13 @@ hr {
 
 .withdraw,
 .finish {
+    color: #403c3c;
     margin: 20px;
     padding: 16px 35px;
     border-radius: 10px;
     font-size: 20px;
     background-color: #BCB8B1;
-    color: #463F3A;
+    /* color: #463F3A; */
     text-decoration: none;
     font-weight: bold;
 }
@@ -307,7 +310,7 @@ hr {
     margin-left: 50px;
     font-size: 25px;
     width: 200px;
-    color: #000000;
+    color: #3f3d3d;
     text-decoration: none;
 }
 
@@ -320,7 +323,7 @@ a:hover {
 }
 
 .total:hover {
-    color: black;
+    color: rgb(43, 41, 41);
 }
 
 .comment {
@@ -328,7 +331,7 @@ a:hover {
 }
 
 .comment:hover {
-    color: #000000;
+    color: #403c3c;
     background-color: yellow;
     cursor: pointer;
 }
