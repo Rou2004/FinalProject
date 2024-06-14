@@ -36,7 +36,7 @@ h2 {
     max-width: 500px;
     padding: 20px;
     margin-top: 100px;
-    left: 32%;
+    left: 40%;
     box-sizing: border-box;
 }
 
@@ -55,7 +55,7 @@ form {
 form p {
     font-size: 1.5em;
     margin-bottom: 1em;
-    color: #000000;
+    color: #3d3939;
 }
 
 form label {
@@ -105,7 +105,7 @@ form button:disabled {
 }
 
 form a {
-    color: #ffffff;
+    color: #6b6363;
     text-decoration: none;
     font-size: 18px;
     display: block;
@@ -126,6 +126,7 @@ a:hover {
 }
 
 header {
+    position: fixed;
     top: 0;
     font-size: 30px;
     padding: 10px;
@@ -133,6 +134,7 @@ header {
     background-color: #BCB8B1;
     width: 100%;
     box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
+    z-index: 1000;
 }
 
 nav {
@@ -140,13 +142,15 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
-    top: 96px;
+    top: 125px;
     height: 60px;
+    position: fixed;
     box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
     flex-direction: row;
     display: flex;
     justify-content: space-around;
     background-color: white;
+    z-index: 900;
 }
 
 .navbar {
@@ -158,7 +162,6 @@ nav {
     background-color: #BCB8B1;
     top: 0;
     box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
-    z-index: 10000;
 }
 
 .logo {
@@ -199,10 +202,10 @@ footer {
     text-align: center;
     align-content: center;
     padding: 5px;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
-    margin-top: 80px;
 }
 
 ul {

@@ -197,9 +197,9 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    margin-left: 15%;
+    margin-left: 18%;
     margin-bottom: 4%;
-    margin-right: 15%;
+    margin-right: 18%;
 }
 .card-sofa-item{
     align-items: center;
