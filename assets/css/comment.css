@@ -101,3 +101,52 @@ footer {
 .logo {
     height: 50px;
 }
+@media (max-width: 1200px) {
+    .stuff-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        height: 200px;
+        width: 200px;
+        margin-left: 15%;
+    }
+    .order_info {
+        font-size: 18px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .check_out {
+        font-size: 20px;
+        right: 20%;
+        padding: 10px 20px;
+    }
+    .cancel {
+        font-size: 20px;
+        right: 25%;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 578px) {
+    img {
+        height: 200px;
+        width: 200px;
+        margin-left: 15%;
+    }
+
+    .order_info {
+        font-size: 20px;
+    }
+
+    .check_out {
+        right: 20%;
+    }
+
+    .cancel {
+        right: 25%;
+    }
+}
