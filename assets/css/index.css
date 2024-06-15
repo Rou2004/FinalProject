@@ -223,7 +223,6 @@ ul.drop-down-menu li:hover > ul {
     padding: 10px;
     text-align: center;
     border: 10px;
-    
 }
 h5,h6{
     text-decoration: none;
@@ -244,4 +243,120 @@ h5,h6{
 
 .logo{
     height: 50px;
+}
+@media (max-width: 1200px) {
+    .stuff-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .left {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .drop-down-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .drop-down-menu li {
+        width: 30%;
+        font-size: 70%;
+    }
+
+    input,
+    .d-flex {
+        height: 68%;
+        width: 68%;
+        margin-left: 20px;
+        height: 30px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 90%;
+    }
+
+    .bestseller,
+    .stuff {
+        width: 80%;
+        height: 200%;
+        flex-wrap: wrap;
+        margin-left: 35px;
+    }
+
+    .map {
+        width: 90%;
+        height: 90%;
+        text-align: center;
+    }
+
+    .part1,
+    .carousel-indicators,
+    .carousel-inner,
+    .carousel-item,
+    .active,
+    .stuff-item {
+        width: 80%;
+    }
+
+    a {
+        width: 80%;
+        padding: 0px 0px;
+    }
+    .stuff-img {
+        width: 120px;
+        height: 120px;
+    }
+    .arrow{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        border-radius: 200px;
+        width: 60px;
+        height: 60px;
+    
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .drop-down-menu {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .drop-down-menu li {
+        width: 30%;
+        justify-content: left;
+    }
+
+    a {
+        width: 80%;
+        height: 30px;
+    }
+
+    .bestseller,
+    .stuff {
+        width: 80%;
+        height: 300%;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    
+
 }

@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+
 a:link{
     color:#000;
 }
@@ -229,4 +230,30 @@ b{
 .addtocart:hover{
    background-color: #8b8781;
    color: white;
+}
+@media screen and (max-width:768px) {
+    .card-sofa{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5px;
+        margin-left: 10%;
+        margin-bottom: 4%;
+        margin-right: 10%;
+    }
+    .sofa-img{
+        width: 180px;
+        height: 180px;
+        border-radius: 6px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .arrow{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        border-radius: 200px;
+        width: 60px;
+        height: 60px;
+    
+    }
 }
