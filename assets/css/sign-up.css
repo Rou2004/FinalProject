@@ -160,6 +160,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: white;
+    padding-top:2%;
 }
 
 .navbar {
