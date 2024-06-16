@@ -11,7 +11,6 @@ body {
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 
 * {
@@ -31,14 +30,25 @@ h2 {
     height: 50px;
 }
 
-.container {
-    position: relative;
-    max-width: 500px;
-    padding: 20px;
-    margin-top: 100px;
-    left: 40%;
-    box-sizing: border-box;
+.container0{
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    border: 20px;
 }
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
 
 form {
     background: rgba(255, 255, 255, 0.3);
@@ -142,7 +152,7 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
-    top: 125px;
+    top: 96px;
     height: 60px;
     position: fixed;
     box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
@@ -150,7 +160,6 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    z-index: 900;
 }
 
 .navbar {
@@ -162,6 +171,7 @@ nav {
     background-color: #BCB8B1;
     top: 0;
     box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
+    z-index: 10000;
 }
 
 .logo {

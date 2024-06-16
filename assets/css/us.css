@@ -188,6 +188,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     text-align: center;
 }
 .flip-container {
+    width: 88%;
     perspective: 1000px;
     font-family: 'Times New Roman', Times, serif;
     padding: 30px;
@@ -199,6 +200,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     align-items: center;
 }
 .father{
+   
     display: flex;
     justify-content: center;
     align-items: center;

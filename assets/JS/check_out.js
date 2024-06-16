@@ -36,3 +36,8 @@ $('input[name="radios"], input[name="convenient_store"], input[name="payment"]')
         $('#multiCollapse3').collapse('hide');
     }
   });
+
+
+  function order_inf(){
+    window.location.href="order.html"
+  }

@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -7,18 +6,47 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
 }
-
-h2 {
+h2{
     font-size: 27.5px;
     color: rgb(132, 130, 130);
+    /* text-shadow: 1px 2px 4px rgb(81, 72, 72); */
     text-align: center;
     font-style: italic;
+}
+.container0{
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    border: 20px;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    background-color: #BCB8B1;
+    border-radius: 20px;
+    /* margin: 50px;
+    border: 50px; */
 }
 
 form {
@@ -31,9 +59,13 @@ form {
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
-    line-height: 40px;
 }
 
+form p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #685f5f;
+}
 
 form label {
     display: block;
@@ -91,15 +123,14 @@ form a:hover {
     text-decoration: underline;
 }
 
-a:link {
-    color: #000;
+a:link{
+    color:#000;
 }
-
-a:hover {
-    color: #ffffff;
+a:hover{
+    color:#ffffff;
 }
-
 header {
+    position: fixed;
     top: 0;
     font-size: 30px;
     padding: 10px;
@@ -116,13 +147,14 @@ nav {
     width: 100%;
     top: 96px;
     height: 60px;
+    position: fixed;
     box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
     flex-direction: row;
     display: flex;
     justify-content: space-around;
+    z-index: 10000;
     background-color: white;
 }
-
 .navbar {
     display: flex;
     align-items: center;
@@ -130,28 +162,23 @@ nav {
     width: 100%;
     padding: 10px;
     background-color: #BCB8B1;
+    position: fixed;
     top: 0;
     box-shadow: 0 0 20px rgba(70, 70, 70, 0.2);
-    z-index: 10000;
+    z-index: 1000;
 }
 
-.logo {
-    height: 50px;
-}
-
-.navbar-brand {
+.navbar-brand{
     color: rgb(69, 66, 63);
     /* margin-left: 40px; */
     font-size: 24px;
     margin: 25px;
 }
-
 .left {
     display: flex;
     align-items: center;
 }
-
-.prod {
+.prod{
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 20px;
@@ -159,28 +186,25 @@ nav {
     padding: 6px;
     color: white;
     text-decoration: none;
-
+   
 }
-
-.prod:hover {
+.prod:hover{
     color: black;
     background-color: #e7b7a9;
 }
-
-footer {
+footer{
     background-color: #dabfb7;
     color: #ffffff;
     text-align: center;
     align-content: center;
     padding: 5px;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
-    margin-top: 80px;
 }
 
-ul {
-    /* 取消ul預設的內縮及樣式 */
+ul { /* 取消ul預設的內縮及樣式 */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -202,13 +226,12 @@ ul.drop-down-menu li {
     border-right: #ccc 1px solid;
 }
 
-ul.drop-down-menu>li:last-child {
+ul.drop-down-menu > li:last-child {
     border-right: none;
 }
 
-ul.drop-down-menu>li {
-    float: left;
-    /* 只有第一層是靠左對齊*/
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
 }
 
 ul.drop-down-menu a {
@@ -220,19 +243,14 @@ ul.drop-down-menu a {
     line-height: 40px;
 
 }
-
-ul.drop-down-menu a:hover {
-    /* 滑鼠滑入按鈕變色*/
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
     background-color: #7a7576;
     color: #fff;
 }
-
-ul.drop-down-menu li:hover>a {
-    /* 滑鼠移入次選單上層按鈕保持變色*/
+ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
     background-color: #7a7576;
     color: #fff;
 }
-
 ul.drop-down-menu ul {
     border: #ccc 1px solid;
     position: absolute;
@@ -250,60 +268,32 @@ ul.drop-down-menu ul li:last-child {
     border-bottom: none;
 }
 
-ul.drop-down-menu ul ul {
-    /*第三層以後的選單出現位置與第二層不同*/
+ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
     z-index: 999;
     top: 10px;
-    left: 157px;
+    left: 90%;
 }
-
-ul.drop-down-menu ul {
-    /*隱藏次選單*/
+ul.drop-down-menu ul { /*隱藏次選單*/
     display: none;
 }
 
-ul.drop-down-menu li:hover>ul {
-    /* 滑鼠滑入展開次選單*/
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     display: block;
 }
 
-.home,
-.member,
-.cart {
+.home, .member, .cart {
     margin: 10px auto;
     width: 30%;
     text-align: center;
 }
 
-.home:hover,
-.member:hover,
-.cart:hover {
+.home:hover, .member:hover, .cart:hover {
     background-color: #dabfb7;
     border-radius: 20px;
 }
 
-.home-img,
-.member-img,
-.cart-img {
+.home-img, .member-img, .cart-img {
     width: 35px;
     height: 35px;
     text-align: center;
-}
-
-.container0 {
-    width: 850px;
-    display: flex;
-    justify-content: center;
-    border: 20px;
-    align-items: center;
-    clear: both;
-    margin: 200px 450px 0px 430px;
-}
-
-.container {
-    max-width: 450px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #BCB8B1;
-    border-radius: 20px;
 }
