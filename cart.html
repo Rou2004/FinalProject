@@ -80,10 +80,10 @@
         </nav>
     </div>
     
-    <form action="" method="post">
+    <form action="" method="post" onsubmit="checkout();return false;">
         <label class="product">
             <input type="checkbox" class="select_product">
-            <img src="https://picsum.photos/300/200?random=1" alt="" class="img_product">
+            <img src="assets/image/coachbed.jpeg" alt="" class="img_product">
             <div class="product_info">
                 商品名稱：雙人小沙發<br>
                 <select name="" id="">
@@ -101,8 +101,8 @@
        
         <label class="product">
             <input type="checkbox" class="select_product">
-            <img src="https://picsum.photos/300/200?random=2" alt="" class="img_product">
-            <div>
+            <img src="assets/image/sofa/sofa2.webp" alt="" class="img_product">
+            <div class="product_info">
                 商品名稱：折疊休閒沙發<br>
                 <select name="" id="">
                     <option value="深灰">深灰</option>
@@ -119,31 +119,12 @@
         </label>
         <hr>
         <p class="total">總金額：NT$300元</p>
-        <a href="check_out.html"><button class="checkout" type="submit">結帳</button></a>
+        <button class="checkout" type="submit">結帳</button>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <footer>
         copyright @ 2024 陳珊妮 陳柔恩 高嘉駿
     </footer>
-    <script>
-        function minus(n){
-            var num = Number(document.getElementsByClassName("output_num")[n].value);
-            if(num>=1){
-                document.getElementsByClassName("output_num")[n].value = num-1;
-            }
-            else
-                alert("商品不能為負數")
-            
-        }
-
-        function add(n){
-            var num = Number(document.getElementsByClassName("output_num")[n].value);
-            if(num<=999){
-                document.getElementsByClassName("output_num")[n].value = num+1;
-            }
-            else
-                alert("商品不足")
-        }
-    </script>
+    <script src="assets/JS/cart.js"></script>
 </body>
 </html>
